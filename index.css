@@ -36,7 +36,7 @@ background-repeat: no-repeat;
     height: 80px;
 }
 .navi{
-    width: 130px;
+    width: 160px;
     height: 50px;
     float: left;
     color: #fff;
@@ -45,12 +45,19 @@ background-repeat: no-repeat;
     justify-content: right;
 }
 .translate{
-margin-left: 200px;
+    width: 3em;
 margin-right: 10px;
+}
+.translimg{
+    width: 1em;
+    height: 50px;
+    background-image: url(./img/Vector.png);
+    background-size:100%;
+    background-position: left;
+    position: relative;
 }
 .head{
 background-image: url(./img/bg_light.svg);
-background-size:100% 100%;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -87,7 +94,7 @@ background-size: 100%;
 }
 .introduction{
     max-width: 1100px;
-    padding: 10%;
+    padding: 5%;
 }
 .profile{
     max-width: 1100px;
@@ -118,7 +125,7 @@ background-size: 100%;
         display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./img/avatar/猫井\ 夕菜\ .jpg);
+    background-image: url(./img/avatar/nikoi.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -163,13 +170,30 @@ background-size: 100%;
     text-align: center;
 }
 .BigPro{
-    width: 200px;
-    height: 100px;
     background-color: #fff;
     display: block;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 2683px;
+    transform: translate(-50%, -50%);
+    /* -webkit-box-shadow: #666 0 0 6px;
+    -moz-box-shadow: #666 0 0 6px;
+    box-shadow: #fff8e7 0 0 6px 6px; */
+    z-index: 996;  /* 此处的图层要大于遮罩图层 */
+}
+#BigProfile{
+    filter: alpha(opacity=70); /* IE的透明度 */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+
+    z-index: 965; /* 此处的图层要大于页面 */
 }
 .session{
     max-width: 1500px;
+    min-height: 350px;
     width: 90%;
     background: linear-gradient(90deg, 
      rgb(255 255 255 / 0%),
@@ -251,9 +275,6 @@ min-width: 335px;
     }
 }
 @media screen and (max-width:700px) {
-    .translate{
-margin-left: 80px;
-    }
     .navi{
         font-size: 20px;
     }
@@ -265,19 +286,19 @@ margin-left: 80px;
         width: 100%;
         margin: 11px 10px 35px 11px;
     }
-.title{
-    font-size: 10px;
-}
-.topic{
-    font-size: 18px;
-}
-.time{
-    font-size: 16px;
-}
-.form {
-    width: 8em;
-    height: 8em;
-}
+    .title{
+        font-size: 10px;
+    }
+    .topic{
+        font-size: 18px;
+    }
+    .time{
+        font-size: 16px;
+    }
+    .form {
+        width: 8em;
+        height: 8em;
+    }
 }
 @media screen and (max-width:650px) {
     .bigborder {
@@ -291,7 +312,7 @@ margin-left: 80px;
         margin: 1px;
     }
     .img {
-        height: 12.7em;
+        height: 8.7em;
         border-radius: 20px;
     }
     .name{
@@ -308,29 +329,29 @@ margin-left: 80px;
         margin-top: 169px;
         border-radius: 0px 0px 20px 20px;
     }
-.site {
-width: 100px;
-height: 50px;
-padding-top: 0px;
-}
+    .site {
+    width: 100px;
+    height: 50px;
+    padding-top: 0px;
+    }
 }
 @media screen and (max-width:400px) {
-    .translate{
-margin-left: 30px;
+    .nav{
+    height: 50px;
     }
     .navi{
-        font-size: 17px;
+        font-size: 12px;
     }
     .head{
         display:flex;
         align-items: center;
         justify-content: space-around;
-        }
-        .img {
-            height:11em;
-            border-radius: 15px;
-        }
-        .border {
-            margin-top: 153px;
-        }
+    }
+    .img {
+        height:8em;
+        border-radius: 15px;
+    }
+    .border {
+        margin-top: 153px;
+    }
 }
