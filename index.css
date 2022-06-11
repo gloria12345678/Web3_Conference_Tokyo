@@ -178,6 +178,7 @@ background-size: 100%;
     left: 50%;
     top: 2683px;
     transform: translate(-50%, -50%);
+    touch-action: none;
     /* -webkit-box-shadow: #666 0 0 6px;
     -moz-box-shadow: #666 0 0 6px;
     box-shadow: #fff8e7 0 0 6px 6px; */
