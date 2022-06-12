@@ -132,9 +132,9 @@ background-size: 100%;
 .border{
     width: 93%;
     height: 60px;
-    background-color: #ffffff0f;
+    background-color: #ffffff59;
     margin-top: 186px;
-    backdrop-filter: blur(6px);
+    /* backdrop-filter: blur(6px); */
     border-radius: 0px 0px 27px 27px;
     display: flex;
     align-items: center;
@@ -236,6 +236,7 @@ min-width: 335px;
         rgb(155 238 255), 
         rgb(226 192 255), 
         rgb(215 154 255));
+        -webkit-background-clip: text;
     color: transparent;
 }
 .title{
@@ -348,7 +349,7 @@ min-width: 335px;
         justify-content: space-around;
     }
     .img {
-        height:9em;
+        height:12.1em;
         border-radius: 15px;
     }
     .border {
