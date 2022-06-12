@@ -236,7 +236,6 @@ min-width: 335px;
         rgb(155 238 255), 
         rgb(226 192 255), 
         rgb(215 154 255));
-    -webkit-background-clip: text;
     color: transparent;
 }
 .title{
