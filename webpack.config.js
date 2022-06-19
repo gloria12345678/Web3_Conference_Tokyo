@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
-
 module.exports = {
   entry: {
     main1:"./index.js",
@@ -10,7 +10,10 @@ module.exports = {
     path: path.resolve(__dirname, "./build"),
     filename: "[name].js",
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./index.html",filename: 'index.html' }),
+    new MiniCssExtractPlugin({filename: 'index.css'})
+  ],
   mode: 'development',
   devServer: {
     contentBase: path.join(__dirname, "build"),
@@ -20,28 +23,26 @@ module.exports = {
     proxy: {
       "/api": "http://localhost:8080",
     },
-  },
+  }, 
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader,'css-loader' ],
       }, 
-      {
-        test: /\.(png|jpg|gif)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
-      {
-        test: /\.svg$/,
-        loader: 'svg-inline-loader'
-    } 
+      // {
+      //   test: /\.(png|jpg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {}
+      //     }
+      //   ]
+      // },
+    //   {
+    //     test: /\.svg$/,
+    //     loader: 'svg-inline-loader'
+    // } 
     ],
   },
 };
