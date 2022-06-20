@@ -237,6 +237,7 @@
     border-top: #fff 1px solid;
     border-radius:10px;
     position: relative;
+    background-image: url(img/open.png);
 }
 .y{
     position: absolute;
@@ -439,9 +440,9 @@
     font-weight: 900;
 }
 .t div{
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 5px;
-    color: #c1d5f9;
+    color: #a5c1f2;
 }
 .footing{
     background-color: #120F32;
@@ -632,15 +633,12 @@
         height: 210px;
     }
     .m {
-        height: 105px;
-        width: 80%;
+        height: 100px;
     }
     .form {
         width: 10em;
-        height: 10em;
-}
-t div {
-    font-size: 14px;
+        height: 10em;   
+         border-radius: 6px;
 }
 .y {
     left: 121px;
@@ -649,7 +647,7 @@ t div {
     font-size: 10px;
 }
 .t {
-    width: 250px;
+    width: 140px;
     margin-right: 2px;
 }
 .r{
