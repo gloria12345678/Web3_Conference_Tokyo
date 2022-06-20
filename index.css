@@ -163,6 +163,11 @@
     background-position: center;
     background-size: cover;
 }
+.btn{
+    width: 100%;
+    height: 196px;
+    position: relative;
+}
 .border{
     width: 100%;
     height: 60px;
@@ -583,6 +588,9 @@
     .footing-a a {
         margin-right: 13px;
     }
+    .btn{
+        height: 138px;
+    }
 }
 @media screen and (max-width:450px) {
     .getTicket {
@@ -659,6 +667,9 @@
 }
 .footing-a a {
     margin-right: 5px;
+}
+.btn{
+    height: 140px;
 }
 }
 @media screen and (orientation:landscape) {
