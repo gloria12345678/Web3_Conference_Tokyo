@@ -159,7 +159,7 @@
     border-color: rgba(255, 142, 223, 1)
     rgba(75, 126, 255, 1);
     position: relative;
-    background-image: url(./img/avatar/nikoi.jpg);
+    /* background-image: url(./img/avatar/0.png); */
     background-position: center;
     background-size: cover;
 }
