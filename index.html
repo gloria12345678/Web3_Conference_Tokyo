@@ -7,7 +7,6 @@
 		<meta name="screen-orientation" content="portrait">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<meta name="mobile-web-app-capable" content="yes">
-		<link type="text/css" rel="stylesheet" href="./index.css">
 	<script defer src="main1.js"></script><script defer src="main2.js"></script></head>
 	<script type="importmap">
 		{
@@ -18,11 +17,13 @@
 </script>
 <script type="module" src="./3dmodel.js"></script>
 <script type="module" src="./index.js"></script>
+<link type="text/css" rel="stylesheet" href="./index.css">
     <body class="body" id="body">
 	 <div class="nav centen">
-			<div id="navi1" class="navi nav1">Schedule</div>
-			<div id="navi2" class="navi">Speaker</div>
-			<div id="navi3" class="navi">Partner</div>
+		<a href="index.html"><div id="navi1" class="navi nav1">TOP</div></a>
+		<a href="time_table.html"><div id="navi1" class="navi nav1">6F</div></a>
+		<a href="community_partner.html"><div id="navi3" class="navi">5F</div></a>	
+		<a href="sponsor.html"><div id="navi3" class="navi">4F</div></a>	
 			<div class="navi">
 				<div  class="translimg"></div>
 				<div id="i81" class="translate">日本語</div>
@@ -45,21 +46,19 @@
 			<img src="./img/Announcement Contents.png">
 		</div>
 	</div>
-	<div class="titer1" id="time"><h2>タイムテーブル</h2></div>
-	<div class="schedule" id="schedule">
-		
+	<div class="floor" id="floor">
+		<div class="floor-link">
+		<a href="time_table.html"class="louder a6f"></a>
+		<a href="community_partner.html"class="louder a5f"></a>	
+		<a href="sponsor.html" class="louder a4f"></a>
+		</div>
 	</div>
-	<div class="titer1"  id="speake"><h2>登壇者様一覧</h2></div>
-	<div class="profile" id="profile">
-		
-	</div>
-	<div id="BigProfile"></div>
 	<div class="youtube">
 		<div class="youtube-le">
 			<h1>check it up</h1>
 			<h2>Web3 Conference Tokyo</h2>
 			<h2>The recorded video is available on YouTube. You can enjoy it anytime.</h2>
-			<a href="https://www.youtube.com/channel/UCqT1gH1Wy8Nb6ABYpi09hWA"><div class="youtube-link">Mask Network JPチャンネル</div></a>
+			<a href="https://www.youtube.com/channel/UCqT1gH1Wy8Nb6ABYpi09hWA"><div class="youtube-link" id="youtube_link">Mask Network JPチャンネル</div></a>
 		</div>
 		<div class="youtube-ri">
 			<div class="youtube-t">ARCHIVE VIDEO</div>
@@ -68,16 +67,23 @@
 	</div>
 	<!-- <div id="spLogo" class="spLogo">
 		<div class="spLogo-clm">
-			<div class="spLogo-Tit">主催</div>
-			<div class="spLogo-row"></div>
-			<div class="spLogo-Tit">共催</div>
-			<div class="spLogo-row"></div>
-			<div class="spLogo-Tit">メディアパートナー</div>
-			<div class="spLogo-row"></div>
-			<div class="spLogo-Tit">主催</div>
-			<div class="spLogo-row"></div>
+			<div class="spLogo-row">
+				<div class="spLogo-clm">
+			      <div class="spLogo-Tit">主催</div>
+			      <div class="spLogo-row"></div>
+				</div>
+			<div class="spLogo-clm"></div>
+			  <div class="spLogo-Tit">共催</div>
+			  <div class="spLogo-row"></div>
+			</div> 
+			</div>
+			
+			<div class="spLogo-Tit">協力</div>
+			<div class="spLogo-row"></div> -->
+<!-- <div class="spLogo-Tit">メディアパートナー</div>
+			<div class="spLogo-row"></div> -->
 		</div>
-	</div> -->
+	</div>
     </div>
 	<div class="footing">
 		<div  class="footing-row">

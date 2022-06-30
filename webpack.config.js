@@ -12,6 +12,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./index.html",filename: 'index.html' }),
+    new HtmlWebpackPlugin({ template: "./time_table.html",filename: 'time_table.html' }),
+    new HtmlWebpackPlugin({ template: "./community_partner.html",filename: 'community_partner.html' }),
+    new HtmlWebpackPlugin({ template: "./sponsor.html",filename: 'sponsor.html' }),
     new MiniCssExtractPlugin({filename: 'index.css'})
   ],
   mode: 'development',

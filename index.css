@@ -8,6 +8,20 @@
     text-decoration:none;
    
 }
+.BigPro{
+    background-color: rgba(16, 10, 55, 0.9);
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 2683px;
+    transform: translate(-50%, -50%);
+    touch-action: none;
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+    z-index: 996; 
+}
 .container{
     max-width: 1400px;
     margin: 0px auto;
@@ -35,7 +49,7 @@
 }
 .aaa{
     width: 50%;
-    overflow-x:hidden
+    overflow-x:hidden;
     /* height: 500px; */
     /* background-color: #10001D; */
 }
@@ -58,11 +72,11 @@
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
 }
 .translate{
     width: 3em;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 .translimg{
     width: 0.8em;
@@ -278,8 +292,7 @@
 }
 .title{
     font-size: 13px;
-    min-height: 50px;
-    margin-bottom: 20px;
+    min-height: 25px;
 }
 .gustname{
     width: 100%;
@@ -294,20 +307,7 @@
     font-size: 18px;
     font-weight:500;
 }
-.BigPro{
-    background-color: rgba(16, 10, 55, 0.9);
-    display: block;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 2683px;
-    transform: translate(-50%, -50%);
-    touch-action: none;
-    display: flex;
-    align-content: center;
-    justify-content:space-around;
-    z-index: 996; 
-}
+
 .pro-row{
     position: fixed;
     width: 95%;
@@ -449,6 +449,7 @@
     font-size: 12px;
     margin-top: 5px;
     color: #a5c1f2;
+   
 }
 .footing{
     background-color: #120F32;
@@ -488,10 +489,81 @@
     width: 55px;
     height: 55px;
 }
+.floor{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.floor-link{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.louder{
+    width: 350px;
+    height: 280px;
+}
+.a6f{
+    background-image: url(img/Frame1.png);
+    background-position: center;
+    background-size: contain;
+}
+.a5f{
+    background-image: url(img/Frame3.png);
+    background-position: center;
+    background-size: contain;
+ }
+.a4f{
+   background-image: url(img/Frame2.png);
+   background-position: center;
+   background-size: contain;
+}
+.community{
+    border: 4px solid;
+    border-radius:20px;
+    background: linear-gradient(180deg, 
+    #39FEFF 0%, 
+    #59A9FD 27.08%, 
+    #6063DB 65.62%, 
+    #F7FBFF 100%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.community_logo{
+    width: 95%;
+    height: 52%;
+    background-position: center;
+    background-size: cover;
+    border-radius:8px 8px 0px 0px;
+}
+.community_name{
+    margin-top: 2%;
+    width: 95%;
+    height: 41%;
+    background-color: #081B4B;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    border-radius:0px 0px 8px 8px;
+    font-weight: 900;
+}
+.community_name div{
+    margin-top: 10px;
+}
 @media screen and (max-width:1080px) {
     .date{
         width: 100%;
     }  
+    .louder{
+        width: 317px;
+        height: 255px;
+    }
 }
 @media screen and (max-width:900px) {
     .topic{
@@ -510,6 +582,13 @@
     .s {
         width: 100%;
     }
+    .louder{
+        width: 247px;
+        height: 185px;
+    }
+    .community_name {
+        font-size: 19px;
+    }
 }
 @media screen and (max-width:700px) {
     .titer1{
@@ -524,7 +603,7 @@
     }
     .date{
         width: 100%;
-        margin: 11px 10px 55px 35px;
+        margin: 11px 10px 15px 35px;
     }
     .title{
         font-size: 10px;
@@ -541,6 +620,13 @@
     } */
     .pro-row-centen {
         font-size: 13px;
+}
+.louder{
+    width: 220px;
+    height: 155px;
+}
+.community_name {
+    font-size: 17px;
 }
 }
 @media screen and (max-width:650px) {
@@ -592,6 +678,12 @@
     .btn{
         height: 138px;
     }
+    .louder {
+        width: 193px;
+        height: 138px;
+    }
+    
+    
 }
 @media screen and (max-width:450px) {
     .getTicket {
@@ -609,7 +701,7 @@
 }
     .titer1{
         /* width: 100%; */
-        font-size: 13px;
+        font-size: 14px;
     }
     .title {
         min-height: 0px;
@@ -619,8 +711,8 @@
     height: 50px;
     }
     .navi{
-        width: 70px;
-        font-size: 12px;
+        width: 65px;
+        font-size: 15px;
     }
     .head{
         display:flex;
@@ -647,7 +739,7 @@
     .form {
         width: 10em;
         height: 10em;   
-         border-radius: 6px;
+        border-radius: 6px;
 }
 .y {
     left: 121px;
@@ -672,13 +764,13 @@
 .btn{
     height: 140px;
 }
+/* .community{
+    width: 100%;
+    height: 17em;
+} */
+.louder{
+    width: 100%;
+    height: 24vh;
+    margin-bottom: 30px;
 }
-@media screen and (orientation:landscape) {
-    .tips{
-        display:block;
-    }
-    /*  内容就隐藏  */
-    .container{
-    /* width: 550px; */
-    }
 }
