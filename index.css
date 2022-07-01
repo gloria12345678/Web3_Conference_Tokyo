@@ -556,6 +556,65 @@
 .community_name div{
     margin-top: 10px;
 }
+.spLogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spLogo-clm{
+    width: 70%;
+}
+.spLogo-row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.spLogo-cl{
+    width: 36%;
+    color: #fff;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spLogo-Tit{ 
+    width: 100%;
+    text-align: center;
+}
+.spLogo-img{
+    width: 100%;
+    height: 50px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.logobbb{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logoaaa{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+}
+.spLogo-i{
+    width: 21%;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
 @media screen and (max-width:1080px) {
     .date{
         width: 100%;
