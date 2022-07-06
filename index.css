@@ -23,7 +23,7 @@
     z-index: 996; 
 }
 .container{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0px auto;
 }
 .centen{
@@ -249,21 +249,20 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.form{
-    width:15em;
-    height: 15em;
+   .form {
+    width: 14em;
+    height: 14em;
     background-color: aquamarine;
-    margin:15px 25px 15px 0px;
+    margin: 30px 25px 15px 0px;
     border-top: #fff 1px solid;
-    border-radius:10px;
+    border-radius: 10px;
     position: relative;
-    background-image: url(img/open.png);
-}
+   }
 .y{
     position: absolute;
     top: 0;
     color: #10001D;
-    left: 185px;
+    left: 171px;
     width: 84px;
     height: 50px;
    
@@ -419,7 +418,7 @@
     text-align: center;
 }
 .m{
-    width: 135px;
+    width: 112px;
     height: 120px;
 }
 .s{
@@ -430,7 +429,7 @@
     margin: inherit;
 }
 .t{
-    width: 130px;
+    width: 110px;
     margin-right: 4px;
 }
 .e{
@@ -628,14 +627,20 @@
 }
 @media screen and (max-width:1500px) {
     .container{
-        max-width: 900px;
+        max-width: 1100px;
         margin: 0px auto;
+    }
+        .date{
+            width: 70%;
+    }  
+    .session {
+        width: 100%;
     }
 }
 @media screen and (max-width:1080px) {
-    .date{
+    /* .date{
         width: 100%;
-    }  
+    }   */
     .louder{
         width: 317px;
         height: 255px;
@@ -646,7 +651,7 @@
         font-size: 23px;
     }
     .date{
-        width: 100%;
+        width: 75%;
         margin: 11px 10px 55px 11px;
     }
     .time{
@@ -678,7 +683,7 @@
         background-image: url(img/logo.png);
     }
     .date{
-        width: 100%;
+        width: 78%;
         margin: 11px 10px 72px 35px;
     }
     .title{
