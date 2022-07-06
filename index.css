@@ -496,7 +496,7 @@
     justify-content: center;
 }
 .floor-link{
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -625,6 +625,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin: 12px;
+}
+@media screen and (max-width:1500px) {
+    .container{
+        max-width: 900px;
+        margin: 0px auto;
+    }
 }
 @media screen and (max-width:1080px) {
     .date{
@@ -854,5 +860,6 @@
 .spLogo-i {
     height: 60px;
     margin: 6px;
+    width: 28%;
 }
 }
