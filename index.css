@@ -66,13 +66,18 @@
     height: 80px;
 }
 .navi{
-    width: 102px;
-    height: 50px;
     float: left;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navi5{
+    width: 102px;
+    height: 38px;
+    font-size: 15px;
+    border: 1px solid #e1e1e1e0;
+    border-radius: 6px;
 }
 .translate{
     width: 3em;
@@ -793,6 +798,12 @@
     }
     .navi{
         width: 65px;
+        height: 28px;
+        font-size: 15px;
+    }
+    .navi5{
+        width: 50px;
+        height: 26px;
         font-size: 15px;
     }
     .head{
@@ -833,7 +844,7 @@
     margin-right: 2px;
 }
 .r{
-    width: 49%;
+    width: 46%;
 }
 .footing-a {
     width: 90%;
